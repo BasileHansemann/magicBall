@@ -1,0 +1,115 @@
+html {
+  overflow: hidden;
+}
+
+body {
+ background: linear-gradient(90deg, rgba(50,50,60,1) 0%, rgba(9,9,121,1) 47%, rgba(0,212,255,1) 100%);
+ 
+}
+.app {
+  width: 100%;
+  margin: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ }
+
+.header {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+//   background-color: red;
+}
+
+h1 {
+    color: rgb(163, 216, 216);
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+.picture {
+  width: 90%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.ballContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.triangleContener {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  align-items: center;
+}
+
+.testContainer {
+  width: 100%;
+  height: 90%;
+  transform: rotate(2turn);
+  transition-duration: 2s;
+}
+
+.response {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 40%;
+  color: rgba(233, 230, 226, 0.753);
+  font-size: 1.2em;
+  padding: 0 5%;
+  text-align: center;
+
+}
+
+.answerButton {
+    font-size: 1.4em;
+    color: rgb(233, 240, 240);
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(5, 51, 216);
+    background-image: linear-gradient( rgb(95, 119, 238), rgba(255,255,255,0));
+    transition: background-color 1s;
+}
+
+.answerButton:hover {
+    cursor: pointer;
+    background-color: rgb(31, 121, 160);
+
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .picture {
+    width: 70%;
+  }
+
+  .response {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .picture {
+    width: 30%;
+  }
+
+  .response {
+    font-size: 1.5em;
+    
+  }
+}

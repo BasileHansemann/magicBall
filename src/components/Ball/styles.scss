@@ -70,7 +70,7 @@ h1 {
   font-size: 1.2em;
   padding: 0 5%;
   text-align: center;
-
+  
 }
 
 .answerButton {
@@ -91,9 +91,18 @@ h1 {
 
 }
 
+@media screen and (orientation: landscape) and (max-width: 999px){
+  
+  .picture {
+    width: 30%;
+  }
+  .response {
+    font-size: .8em;
+    
+  }
+}
 
-
-@media screen and (min-width: 480px) {
+@media screen and (orientation: portrait) and (min-width: 480px) {
   .picture {
     width: 70%;
   }
@@ -103,7 +112,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (orientation: landscape) and (min-width: 1000px) {
   .picture {
     width: 30%;
   }

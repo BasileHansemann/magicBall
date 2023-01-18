@@ -39,6 +39,7 @@ function Ball() {
     const responseValue = possibleResponses[calcul];
 
     function rotate(){
+
          if (first ===true) {
             const rotate = document.querySelector(".triangleContener") ;
             rotate.classList.toggle("testContainer");
